@@ -5,7 +5,16 @@ exclude = ["build", "dist", ".venv"]
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F"]
-ignore = ["E203", "E501", "B008", "C901", "W191", "B904"]
+ignore = [
+    "E203",
+    "E501",
+    "B008",
+    "C901",
+    "W191",
+    "B904",
+    # "F401" #未使用のインポートを無視する
+]
+
 
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
